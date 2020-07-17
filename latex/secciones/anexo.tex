@@ -1,0 +1,49 @@
+
+\appendix
+
+\section*{\textbf{Código de \MATLAB}}
+
+Para las simulaciones numéricas del Horten IV se ha desarrollado un código en \MATLAB tomando como base un código desarrollado por el profesor. Las gráficas del documento también se han obtenido con \MATLAB. Por motivos de extensión solamente se incluye parte del código de \MATLAB. El código en su totalidad se puede consultar \href{https://github.com/plosan/aerodynamics_homework_2}{aquí}.
+
+\lstset{
+    columns=fullflexible,
+    frame=single,
+    breaklines=true,
+    postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+}
+
+\section*{A. Elección del perfil}
+\vspace*{-5mm}
+\lstinputlisting{codigo/01_eleccion_perfil.m}
+
+\section*{B. Ajuste de la flecha}
+\vspace*{-5mm}
+\lstinputlisting{codigo/02_01_ajuste_flecha.m}
+\vspace*{-5mm}
+\lstinputlisting{codigo/02_02_margen_estabilidad.m}
+
+\section*{C. Análisis de convergencia}
+\vspace*{-5mm}
+\lstinputlisting{codigo/03_analisis_convergencia.m}
+
+\section*{D. Ajuste de la torsión geométrica}
+\vspace*{-5mm}
+\lstinputlisting{codigo/04_ajuste_torsion.m}
+
+\section*{E. Determinación de las distribuciones de sustentación básica y adicional}
+\vspace*{-5mm}
+\lstinputlisting{codigo/05_distribucion_lift.m}
+
+\section*{F. Propiedades de pérdida}
+\vspace*{-5mm}
+\lstinputlisting{codigo/06_propiedades_perdida.m}
+
+\section*{G. Resistencia aerodinámica del ala}
+\vspace*{-5mm}
+\lstinputlisting{codigo/07_drag_ala.m}
+
+\section*{H. Análisis de control con deflexión de flaps}
+\vspace*{-5mm}
+\lstinputlisting{codigo/08_control_flaps.m}
+
+

@@ -1,0 +1,69 @@
+\usepackage{graphicx} 
+\usepackage{tabularx}
+\usepackage{tabulary}
+\usepackage{url}       
+\usepackage{amsmath} 
+\usepackage[left=2cm,right=1.5cm,top=1.5cm,bottom=1.5cm]{geometry}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{empheq}
+\usepackage{textcomp}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{xspace}
+\usepackage{makecell}
+\usepackage{hhline}
+\usepackage[style=numeric,sorting=none]{biblatex}
+\addbibresource{referencias.bib}
+\renewcommand{\refname}{Referencias}
+\parindent=5mm 
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\figurename}{Figura}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    citecolor=green,
+}
+
+\newcommand*{\eg}{e.g.\@\xspace}
+\newcommand*{\ie}{i.e.\@\xspace}
+
+\newcommand{\mac}{\overline{\overline{c}}}
+\newcommand{\sm}{\mathrm{sm}}
+
+\newcommand{\MATLAB}{\textsc{Matlab}\xspace}
+\newcommand{\dd}{\mathrm{d}}
+
+\renewcommand{\abstract}{\textbf{\emph{Resumen}} -- }
+\renewcommand\appendixname{Anexos}
+
+\setlength{\parskip}{1mm}%
+
+\newcommand{\reynolds}{\mathrm{Re}}
+
+% Matlab code
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+
+\makeatletter
+\long\def\@makecaption#1#2{\ifx\@captype%
+\footnotesize{\normalfont\footnotesize #1}\\
+{\normalfont\footnotesize\scshape #2}%
+\@IEEEtablecaptionsepspace
+\else
+\@IEEEfigurecaptionsepspace
+\setbox\@tempboxa\hbox{\normalfont\footnotesize {#1.}~~ #2}%
+\ifdim \wd\@tempboxa >\hsize%
+\setbox\@tempboxa\hbox{\normalfont\footnotesize {#1.}~~ }%
+\parbox[t]{\hsize}{\normalfont\footnotesize \noindent\unhbox\@tempboxa#2}%
+\else
+\hbox to\hsize{\normalfont\footnotesize\hfil\box\@tempboxa\hfil}\fi\fi}
+\makeatother
+
+
+\usepackage{etoolbox}
+\apptocmd{\sloppy}{\hbadness 10000\relax}{}{}
